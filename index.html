@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" ng-app='app' >
+<!doctype html>
+<html ng-app>
   <head>
-    <title>City List</title>
-    <script src="angular.min.js"></script>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
+
   </head>
-  <body ng-controller='mainController'>
-    <p>{{message}}</p>
+  <body>
     <div>
-      <my-city></my-city>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script>
+    // this will eventually go into the script.js file, that won't exist yet for simplicity.
+    // get your app working, copy/paste into script.js, then get rid of this inline script, and finally uncomment the script tag below.
+    </script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
